@@ -7,7 +7,7 @@
 | 状態 | **全文の読み**（2通・229組すべてに読みを付けた。第2電の4組は推定） |
 | 先行との関係 | 第1電は**再現（reproduced）**：変換式は友清理士氏、平文の刊本は saberwatchmanga/sun-circle-cipher-1916 が先に特定している。新しいのは第2電の通読と差出人6人の比定（下の「この解読で新しく分かったこと」） |
 | 人の確認 | **人は書き起こしを確かめていない。** ローマ字の書き起こしは AI（Claude）によるもので、別の AI（Codex）の書き起こしと照らしただけ。AI どうしの一致は、人の確認の代わりにならない |
-| 数字 | 2回目の書き起こし（Codex、1回目を見せずに3回）との字の一致率 94.0〜94.3%／対照：第1電の最終の表は刊本107字のうち102字と一致／較正：修正を入れていない組は59組中54組が刊本と一致（残り5組は文の違い）。鍵のかき混ぜの対照はない（鍵を推定する方式ではないため）。詳しくは [docs/METHOD.md](docs/METHOD.md) |
+| 数字 | 独立の2回目の書き起こし（Codex、1回目を見せずに、1回目を直した後に新しい文脈で1回）との字の一致率 94.6%／対照：第1電の最終の表は刊本107字のうち102字と一致／較正：修正を入れていない組は59組中54組が刊本と一致（残り5組は文の違い）。鍵のかき混ぜの対照はない（鍵を推定する方式ではないため）。詳しくは [docs/METHOD.md](docs/METHOD.md) |
 | AI の使用 | 書き起こし・変換器・修正の探索・照合・文書は Claude（Claude Opus 5.5）、2回目の書き起こしは OpenAI Codex。人は方針の指示と結果の確認（下の「AI の使用」） |
 
 日本の外務省が当時写し取った、黄興宛ての暗号電報2通（1916年5月20日付）を、変換式から読み通した記録です。
@@ -78,7 +78,7 @@
 | `src/` | 変換器と道具（`kana.py`、`second.py`、`build_groups.py`、`check.py`、`fix.py`、`beam.py`、`lm.py`、`build_ctc.py`） |
 | `tests/` | 変換式・返電・表の整合のテスト |
 | `docs/` | 方法・数字・AI の使用・限界（METHOD）、解読の記録（DECIPHERMENT）、検証（VERIFICATION）、未解決の点（OPEN）。英語版は `*.en.md` |
-| `second/` | 2回目の書き起こし：Codex による答えを見せない転写3回（`codex_run*.txt`。`*_raw.txt` は出力そのまま、`*_events.jsonl` は実行記録）と依頼文。一致率は `src/second.py` |
+| `second/` | Codex による答えを見せない転写：独立の2回目（`codex_run4.txt`）と、1回目を直すのに使った照合の記録3回（`codex_run1〜3.txt`）。`*_raw.txt` は出力そのまま、`*_events.jsonl` は実行記録。依頼文は `codex_prompt.txt`。一致率は `src/second.py` |
 | `data/README.md` | data/ のファイル・列・区分の説明。日本語と英語 |
 
 ## 使い方
@@ -117,11 +117,12 @@ python3 -m unittest discover -s tests
   - 別の AI（OpenAI の Codex）に、答えを見せずに3回転写させた結果
   - 先行リポジトリの転写
 
-  食い違った箇所は画像で見直し、5語を直しました（[docs/VERIFICATION.md](docs/VERIFICATION.md)）。
+  食い違った箇所は画像で見直し、5語を直しました（[docs/VERIFICATION.md](docs/VERIFICATION.md)）。この比較は直すのに使ったので、独立の数字とはしていません。直した後に、Codex にもう1回、新しい文脈で答えを見せずに読ませ（独立の2回目）、字の一致率は 94.6% でした（[docs/METHOD.md](docs/METHOD.md)）。
 - 作業の一部は、Claude Code の /goal 機能で、目標に達するまで自動で続けさせました。
 - **使ったモデル**
   - Claude：Claude Opus 5.5（`claude-opus-5-5`）。作業の途中で使った補助のエージェント3つも、同じモデル。
   - 転写の照合：OpenAI の Codex（`codex-cli 0.163.0-alpha.10.2`、モデル `gpt-6.1-sol`）。
+  - 独立の2回目の書き起こし：同じ Codex CLI、既定のモデル（実行記録にモデル名は出ない）。
 - AI の読みや判断には、誤りがありえます。修正の根拠と確度は `data/corrections.csv` と `docs/OPEN.md` に書きました。原資料（JACAR の画像）で確かめてください。
 
 ## ライセンス

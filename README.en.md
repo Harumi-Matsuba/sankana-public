@@ -7,7 +7,7 @@
 | Status | **Full reading** (both telegrams, all 229 groups read; 4 groups of Telegram 2 are inferred) |
 | Relation to prior work | Telegram 1 is **reproduced**: the formula is Satoshi Tomokiyo's, and its printed plaintext was first identified by saberwatchmanga/sun-circle-cipher-1916. New here are the continuous reading of Telegram 2 and the identification of its six senders (see "What is new" below) |
 | Human checking | **No human has checked the transcription.** The romaji was transcribed by an AI (Claude) and only compared with transcriptions by another AI (Codex). Agreement between AIs is not a substitute for human checking |
-| Figures | Second transcription (Codex, three runs without seeing the first): 94.0–94.3% letter agreement / Control: the final table of Telegram 1 matches 102 of the 107 printed characters / Calibration: 54 of the 59 uncorrected groups match the print (the other 5 are textual differences). No key-shuffling control (no key is estimated in this system). Details in [docs/METHOD.en.md](docs/METHOD.en.md) |
+| Figures | Independent second transcription (Codex, one run without seeing the first, in a fresh context after the first was corrected): 94.6% letter agreement / Control: the final table of Telegram 1 matches 102 of the 107 printed characters / Calibration: 54 of the 59 uncorrected groups match the print (the other 5 are textual differences). No key-shuffling control (no key is estimated in this system). Details in [docs/METHOD.en.md](docs/METHOD.en.md) |
 | Use of AI | Transcription, converter, correction search, checks and documents by Claude (Claude Opus 5.5); second transcription by OpenAI Codex. The human directed the work and reviewed the results (see "Use of AI" below) |
 
 This repository records a full reading of two cipher telegrams to Huang Xing (黄興), dated 20 May 1916. The Japanese Foreign Ministry copied them at the time. They are read here with the known conversion formula.
@@ -82,7 +82,7 @@ All 229 groups are tabulated in `data/groups.csv`.
 | `src/` | Converter and tools (`kana.py`, `second.py`, `build_groups.py`, `check.py`, `fix.py`, `beam.py`, `lm.py`, `build_ctc.py`) |
 | `tests/` | Tests of the formula, the reply, and table consistency |
 | `docs/` | Method, figures, use of AI and limits (METHOD), decipherment record (DECIPHERMENT), verification (VERIFICATION), open questions (OPEN). English versions are `*.en.md` |
-| `second/` | Second transcription: three blind transcriptions by Codex (`codex_run*.txt`; `*_raw.txt` is the unedited output, `*_events.jsonl` the run log) and the prompt. Agreement is computed by `src/second.py` |
+| `second/` | Blind transcriptions by Codex: the independent second transcription (`codex_run4.txt`) and the three cross-check runs used to correct the first (`codex_run1–3.txt`). `*_raw.txt` is the unedited output, `*_events.jsonl` the run log; the prompt is `codex_prompt.txt`. Agreement is computed by `src/second.py` |
 | `data/README.md` | Meaning of the files, columns and categories in `data/`. Japanese and English |
 
 ## Usage
@@ -121,11 +121,12 @@ See [SOURCES.md](SOURCES.md#english) for full references.
   - three blind transcriptions by another AI (OpenAI Codex), and
   - the prior repository's transcription.
 
-  Disagreements were rechecked against the images, and 5 words were corrected (see [docs/VERIFICATION.en.md](docs/VERIFICATION.en.md)).
+  Disagreements were rechecked against the images, and 5 words were corrected (see [docs/VERIFICATION.en.md](docs/VERIFICATION.en.md)). Because this comparison was used for the corrections, it is not reported as an independent figure. After the corrections, Codex read the images once more in a fresh context without seeing any answer (the independent second transcription); letter agreement was 94.6% (see [docs/METHOD.en.md](docs/METHOD.en.md)).
 - Parts of the work were run automatically until a goal was reached, using Claude Code's /goal feature.
 - **Models used**
   - Claude: Claude Opus 5.5 (`claude-opus-5-5`). The three helper agents used during the work ran on the same model.
   - Transcription cross-check: OpenAI Codex (`codex-cli 0.163.0-alpha.10.2`, model `gpt-6.1-sol`).
+  - Independent second transcription: the same Codex CLI, default model (the model name does not appear in the run log).
 - AI readings and judgments can be wrong. The grounds and certainty of each correction are given in `data/corrections.csv` and [docs/OPEN.en.md](docs/OPEN.en.md). Please check against the original JACAR images.
 
 ## License

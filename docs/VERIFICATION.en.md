@@ -42,7 +42,8 @@ The romaji was transcribed from the images by Claude. No human checked it letter
   - OpenAI Codex (model gpt-6.1-sol) was given only the images of frames 0076–0078 and asked for a literal transcription, three separate times.
   - It was not shown my transcription or the prior repository's. In all three runs there were no file reads or command executions (confirmed in the run logs).
   - The three results were combined by majority vote, word by word.
-  - The three transcriptions and the prompt are in `second/`. Letter agreement with the corrected `data/romaji_raw.txt` is 94.0%, 94.3% and 94.2% (`src/second.py`, [METHOD.en.md](METHOD.en.md)).
+  - The three transcriptions and the prompt are in `second/` (`codex_run1–3.txt`). Letter agreement with the corrected `data/romaji_raw.txt` is 94.0%, 94.3% and 94.2% (`src/second.py`).
+  - Because the first transcription was corrected after seeing this comparison, this is a cross-check record, not an independent second transcription. The independent second transcription (run 4, made in a fresh context after the corrections; 94.6% agreement) is in [METHOD.en.md](METHOD.en.md).
 
 - **Agreement by word** (126 words)
 

@@ -1,6 +1,9 @@
-"""2回目の書き起こし（second/ の Codex 3回）と、data/romaji_raw.txt の一致率を出す。
+"""2回目の書き起こし（second/ の Codex）と、data/romaji_raw.txt の一致率を出す。
 
   python3 src/second.py
+
+- 1〜3回目（codex_run1〜3）：照合の記録。この比較を見て romaji_raw.txt の5語を直したので、独立の2回目とは呼ばない。
+- 4回目（codex_run4）：直した後に、新しい文脈で、答えを見せずに読ませたもの。これを独立の2回目とする。
 
 一致率 = 1 − （語ごとに並べたときの、違う字の数）/（romaji_raw.txt の字数）。
 Codex の不確かな字の候補（[a/o]）は外し、最初の読みだけを使う。書き足しの印（^）と点（.）も外す。
@@ -59,12 +62,21 @@ def compare():
     out['vote'] = {'3of3': vote[3], '2of3': vote[2], 'split': vote[1]}
     out['majority_same'] = maj_same
     out['majority_diff'] = maj_diff
+    run4 = read_codex(ROOT / 'second' / 'codex_run4.txt')
+    assert len(run4) == len(ours)
+    d = sum(diff_letters(a, b) for a, b in zip(ours, run4))
+    out['independent'] = {'diff_letters': d, 'letter_agreement': 1 - d / total,
+                          'same_words': sum(a == b for a, b in zip(ours, run4))}
     return out
 
 
 def main():
     r = compare()
     print(f"romaji_raw.txt: {r['words']} 語・{r['letters']} 字")
+    x = r['independent']
+    print(f"独立の2回目（Codex 4回目）: 違う字 {x['diff_letters']}、字の一致率 {x['letter_agreement']:.1%}、"
+          f"綴りが同じ語 {x['same_words']}/{r['words']}")
+    print('照合の記録（Codex 1〜3回目。これを見て5語を直した）:')
     for k, x in enumerate(r['runs'], 1):
         print(f"Codex {k} 回目: 違う字 {x['diff_letters']}、字の一致率 {x['letter_agreement']:.1%}、"
               f"綴りが同じ語 {x['same_words']}/{r['words']}")

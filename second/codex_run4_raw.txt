@@ -1,0 +1,43 @@
+S1 R1: sokahokat arakotsuka atauichire
+S1 R2: ehokaetasa ehareusasu kehakaasei
+S1 R3: kitoshikon urikosenek onoheanewa
+S1 R4: enolaahits uushisuena so[a/o]enaraare
+S1 R5: ikanisakit etekassise ineteketsu
+S1 R6: niusiwaish ifukikisui nohienikek
+S2 R1: awakaasene ashie ketai kotoakishoh
+S2 R2: e[o/s]nakaehet ekichikian oiusukaase
+S2 R3: eohakaoika esetaochini aishishike
+S2 R4: shisiolu kosetanuki nakuttawaka
+S2 R5: tosakutsum uinichikan irakuewhik
+S2 R6: ehoyaiheaa eukaosokik usawoktae
+S2 R7: nuseosutea soiisuyaki hehaketsny
+S2 R8: aehaikanuf eiatawakete kaasenakas
+S2 R9: oakihitaas kifuketaha ahiyakmush
+S2 R10: iutoriasac hiuchitaka satekeshis
+S3 R1: aanaekisoa uerekoteni kihiraenas
+S3 R2: ounariehak aitutaitek aaseshikus
+S3 R3: akuasameku tachiofure otumeenur
+S3 R4: coteriatsu rikochitak asukaaseik
+S3 R5: itoshikonu naufuukuts unikishine
+S3 R6: echinashit ukitokaase heihorakut
+S3 R7: aakotomeses oheanokki nishionauk
+S3 R8: oseneatesa utsurekuto kaenukikor
+S3 R9: hieateteia imaahotaos eokutokeut
+S3 R10: otsuushish ioshikaoto chikihofuk
+S4 R1: ehofukotsu sakushichi ochineats
+S4 R2: hienikaoso takunesoan tunhenotae
+S4 R3: konakaesot easuekahik auhoraahit
+S4 R4: athusakush ichitochica osekaesoni
+S4 R5: kanuteashi takotoakon iwatinorea
+S4 R6: ehikutenas ekarookuno hikehoseku
+S4 R7: takaononie sureohishe kutafukesa
+S4 R8: akusoukoho takehiseko shiakinomi
+S4 R9: unayauheak iteakihiek at^oakitets
+S4 R10: uusunaechi yakisureif ukiisareis
+S5 R1: eyunikeiso nukaseruit oakanutauh
+S5 R2: esakifuitea sunikuhese kutanukits
+S5 R3: uaifumikan uneatetauh esatefmika
+S5 R4: numekanoki iseaasuchi kehiye kohi
+S5 R5: heanaheiho wakat^oekat ooinunanuku
+S5 R6: heniukufunu atamekanot taaeinaoii
+NOTES: Especially hard: S1 R4 group 3; S2 R2 group 1, R8 group 2, R10 group 2; S3 R2 group 1, R8 group 1; S4 R4 group 1, R9 group 2; S5 R1 group 3, R3 group 3, R6 groups 1 and 3. Some apparent spaces within groups are uncertain.

@@ -15,6 +15,7 @@ class TestSecond(unittest.TestCase):
         self.assertEqual([x['diff_letters'] for x in r['runs']], [76, 72, 74])
         self.assertEqual(r['vote'], {'3of3': 60, '2of3': 55, 'split': 11})
         self.assertEqual((r['majority_same'], r['majority_diff']), (78, 37))
+        self.assertEqual((r['independent']['diff_letters'], r['independent']['same_words']), (68, 76))
 
 
 if __name__ == '__main__':
