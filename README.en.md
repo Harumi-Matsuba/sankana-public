@@ -83,7 +83,6 @@ All 229 groups are tabulated in `data/groups.csv`.
 | `tests/` | Tests of the formula, the reply, and table consistency |
 | `docs/` | Method, figures, use of AI and limits (METHOD), decipherment record (DECIPHERMENT), verification (VERIFICATION), open questions (OPEN). English versions are `*.en.md` |
 | `second/` | Second transcription: three blind transcriptions by Codex (`codex_run*.txt`; `*_raw.txt` is the unedited output, `*_events.jsonl` the run log) and the prompt. Agreement is computed by `src/second.py` |
-| `CITATION.cff` | Citation information (author, date) |
 | `data/README.md` | Meaning of the files, columns and categories in `data/`. Japanese and English |
 
 ## Usage

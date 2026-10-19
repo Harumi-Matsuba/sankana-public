@@ -79,7 +79,6 @@
 | `tests/` | 変換式・返電・表の整合のテスト |
 | `docs/` | 方法・数字・AI の使用・限界（METHOD）、解読の記録（DECIPHERMENT）、検証（VERIFICATION）、未解決の点（OPEN）。英語版は `*.en.md` |
 | `second/` | 2回目の書き起こし：Codex による答えを見せない転写3回（`codex_run*.txt`。`*_raw.txt` は出力そのまま、`*_events.jsonl` は実行記録）と依頼文。一致率は `src/second.py` |
-| `CITATION.cff` | 引用の情報（名義・日付） |
 | `data/README.md` | data/ のファイル・列・区分の説明。日本語と英語 |
 
 ## 使い方
