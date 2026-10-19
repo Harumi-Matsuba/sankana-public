@@ -13,13 +13,12 @@
 語,43,kifuketaha,hifuketaha,k を h と読む（前の語末の s と合わせて shi）。タアシ＝唐,高,刊本一致
 語,44,ahiyaknush,ahiyakunush,u を補う。ヤクヌ＝岑,高,刊本一致
 語,45,iutoriasac,ietoriasoc,u を e、a を o と読む。シエト＝春、リアソ＝煊,高,刊本一致
-語,46,huuchitaka,hiuchitaka,hu を hi と読む。チウチ＝梁,高,刊本一致
 語,48,aanaekesoa,aanaEkesoa,e をヱとする。ヱケソ＝顯,高,刊本一致
 語,49,uerekoteni,uherekoteni,h を補う。アウヘ＝世,高,刊本一致
 語,52,aikutaitek,aitataitek,ku を ta と読む。カイタ＝光,高,刊本一致・先行リポジトリの転写と一致
 語,55,tachiofure,tachiafuri,o を a、re を ri と読む。チアフ＝李、リオツ＝烈,高,刊本一致
 語,57,coterriatsu,eoteriatsu,c を e と読み、重複した r を除く。レオテ＝陳、リアツ＝炳,高,刊本一致
-語,58,nikochitak,rikochitak,n を r と読む。リコチ＝焜,高,刊本一致・先行リポジトリの転写と一致
+語,63,echinashit,echiuashit,n を u と読む（筆記体の n/u）。この1字で後ろの組の区切りがそろう,中,区切りの整合（n のままだと後ろの全組がずれる）
 語,66,aakotomases,aakotomaus,se を u と読む。マウソ＝定（以定進行方略）,中,文脈
 語,71,kaenukikoc,kaenikikoc,nu を ni と読む。カエニ＝僅（軍務院僅擁虛名）,中,文脈（0274↔0284 の1桁違い）
 語,79,sakushichi,sakushita,chi を ta と読む。タオチ＝和（協和軍。協和は李烈鈞の字）,中,文脈
@@ -30,13 +29,13 @@
 語,88,ichitochica,itaochika,chito を tao、chica を chika と読む。タオチ＝和、カオセ＝兵,中,文脈・日本側の書き込み「和」「兵」
 語,92,iwatunorea,iwakunorea,tu を ku と読む。ワクノ＝恐,中,文脈
 語,93,shikutenas,shikukenas,te を ke と読む。クケナ＝發,中,文脈
-語,96,takaonomie,takaononie,m を n と読む。ニエス＝此,高,文脈・日本側の書き込み「此」
 語,97,sureohishe,sureohishi,末尾の e を i と読む。シクタ＝暫,高,日本側の書き込み「暫」
 語,99,akusoukoho,akutoukoho,so を to と読む。アクト＝代（代理）,中,文脈
 語,101,shiakinomi,suakinomi,shi を su と読む。セコス＝謀（參謀）,中,文脈
 語,106,yakisureif,yakisareif,su を sa と読む。ヤキサ＝師,中,文脈
 語,108,iyunikeiso,eyuuniheiso,先頭の i を e、u を補い、k を h と読む。レイセ＝集、ユウニ＝舊、ヘイソ＝部,中,文脈
-語,121,wakataekat,wakatoekat,ta を to と読む。ワカト＝情,高,日本側の書き込み「情」
+語,116,esatefmika,esatefumika,単独の f をフ（fu）と読む,高,f の後ろに母音がない。読みは同じ組211（推定）にかかる
+語,121,wakataekat,wakatoekat,a の上に書き足された o を採り、ta を to と読む。ワカト＝情,高,a の上に小さく o が書き足されている（コマ0078）・日本側の書き込み「情」・Codex の転写は3回とも wakatoekat
 語,122,ominunanuku,omiunanuku,nu を u と読む。ミウナ＝源,高,日本側の書き込み「源」
 語,123,henukufunu,hemukufunu,nu を mu と読む。ムクフ＝羣,中,日本側の書き込み「群」
 語,125,akasnowari,akasuowari,n を u と読む。タカス＝哿、オワリ（終わりの印）,高,日本側の転写「タカス」「オワリ」
