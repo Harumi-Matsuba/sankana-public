@@ -1,5 +1,7 @@
 # 1916年の三仮名電報（JACAR B03050089100）の解読
 
+[English README](README.en.md)
+
 日本の外務省が当時写し取った、黄興宛ての暗号電報2通（1916年5月20日と推定）を、変換式から読み通した記録です。
 - 資料：外務省記録「特定人ノ発受郵便物取調」第3巻、JACAR B03050089100、コマ0076〜0078（ローマ字の暗号文）、コマ0079〜0081（当時の日本側の作業紙）
 - 方式：漢字を中国の標準電碼（4桁）にし、それを仮名3字に置き換え、ローマ字で送る「三仮名コード」
@@ -103,7 +105,7 @@ python3 -m unittest discover -s tests
 
 ## ライセンス
 - コード（`src/`、`tests/`）：MIT
-- 文書とデータ（`docs/`、`data/` の自作部分、この README）：CC BY 4.0
+- 文書とデータ（`docs/`、`data/` の自作部分、README.md・README.en.md）：CC BY 4.0
 - `data/ctc_kTaiwanTelegraph.tsv`：Unicode のライセンスに従います。
 
 詳しくは [LICENSE](LICENSE)。
