@@ -24,6 +24,14 @@ TOMOKIYO = [
 # 黄興の返電（JACAR B03050731500）の冒頭8語。ローマ字は友清氏のページによる。
 HUANG_REPLY = 'REKUTATA UHOYAKATE SEKANAOKU SAKEKINISE OSUKAKUCHI REUHONIUSU MAKASUSAKU FUREOHIHE'
 
+# 同じ返電の全文（31語）。ローマ字は友清氏のページによる。
+HUANG_REPLY_FULL = (
+    'REKUTATA UHOYAKATE SEKANAOKU SAKEKINISE OSUKAKUCHI REUHONIUSU MAKASUSAKU FUREOHIHE '
+    'YENIKIYEHI TAKASUREU SASHIKIHE WAONIAAHO SAYEHITE UHINAKUTA NEATEMUYE SUHEUHAKA '
+    'YESOMIKANU TEASUUKU TSUHAKOSE KEKININAKI TEAKETASHI KONUOHIKE HIMIKANO SHIKUSAHE '
+    'UHATAKASA KEKINIKA ATAREUSASU OSO YUA NIRA KISU'
+)
+
 
 class TestFormula(unittest.TestCase):
     def test_round_trip(self):
@@ -46,6 +54,23 @@ class TestFormula(unittest.TestCase):
         words = HUANG_REPLY.lower().split()
         text = ''.join(ctc[decode(g)] for g in groups_from_words(words) if len(g) == 3)
         self.assertTrue(text.startswith('隱印崧詔鬯行諸兄鑒正寄函'), text)
+
+    def test_huang_reply_full_text(self):
+        # 友清氏が記事で示している2つの直し方だけを当てると、全組が読める。
+        #  - 「O HI」は「CHI」に直せる（KONUOHIKE → KONUCHIKE）
+        #  - このローマ字の YE は、2字目・3字目ではエ（2字目に入るのはア〜オ・カ〜コだけ）
+        ctc = load_ctc()
+        words = HUANG_REPLY_FULL.lower().replace('konuohike', 'konuchike').split()
+        groups = groups_from_words(words)
+        self.assertEqual(len(groups[-1]), 3)
+        chars = []
+        for g in groups:
+            g = [g[0]] + [('エ' if x == 'ヱ' else x) for x in g[1:]]
+            chars.append(ctc[decode(g)])
+        # 『近代史資料』の活字は「護國軍能入湘贛」で、暗号文にある「速」がない
+        self.assertEqual(''.join(chars),
+                         '隱印崧詔鬯行諸兄鑒正寄函間適接哿電敬悉一切護國軍能速入湘贑'
+                         '甚好行嚴何日東渡望速啓行先電示興徑')
 
     def test_tokenize(self):
         self.assertEqual(tokenize('shichitsufu'), ['シ', 'チ', 'ツ', 'フ'])

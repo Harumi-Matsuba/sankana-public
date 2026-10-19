@@ -21,11 +21,11 @@
 ## 先行研究
 - 友清理士「Solution of Two Chinese Cipher Telegrams Archived in Japan (1916)」Cryptiana
   - https://cryptiana.web.fc2.com/code/chinesecrypto_e2.htm（2026年9月18日初出、9月23日更新）
-  - 三仮名コードの変換式。テストで使った15組の対応と、黄興の返電のローマ字（冒頭8語）は、このページによる。
+  - 三仮名コードの変換式。テストで使った15組の対応と、黄興の返電のローマ字（全文31語）と、その直し方（O HI → CHI）は、このページによる。
 - saberwatchmanga/sun-circle-cipher-1916
   - https://github.com/saberwatchmanga/sun-circle-cipher-1916（2026年10月10日の版を参照）
   - 第1電の刊本の特定と翻字。先行リポジトリの指摘は docs/OPEN.md に挙げた。このリポジトリには、同リポジトリのファイルを含めていない。
-- D. Bourdeau, cyphersolver
+- D. Bourdeau, cyphersolver（黄興の返電の、当時の日本側の写しの翻字は https://dbourdeau.github.io/cyphersolver/huangxing.html による）
   - https://github.com/dbourdeau/cyphersolver
   - https://dbourdeau.github.io/cyphersolver/sunintercepts.html
 
