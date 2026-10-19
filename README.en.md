@@ -4,7 +4,7 @@
 
 | | |
 |---|---|
-| Status | **Full reading** (both telegrams, all 229 groups read; 4 groups of Telegram 2 are inferred) |
+| Status | **Full reading** (both telegrams, all 229 groups read; 4 groups of Telegram 2 are inferred). Grounds: control by comparison with the print (102 of 107 characters) / independent second transcription 94.6% letter agreement (≥ 85%) / share given a value 224/229 groups = 97.8% (excluding the 5 groups filled from the print, including the 4 inferred; ≥ 95%) / calibration: 54/59 uncorrected groups = 91.5% (≥ 90%) |
 | Relation to prior work | Telegram 1 is **reproduced**: the formula is Satoshi Tomokiyo's, and its printed plaintext was first identified by saberwatchmanga/sun-circle-cipher-1916. This work adds the continuous reading of Telegram 2 and the identification of its six senders (see "What this decipherment adds" below). These include groups left blank in the prior repository, but no independent prior-work check by a separate session has been done yet, so this is not claimed as a first |
 | Human checking | **No human has checked the transcription.** The romaji was transcribed by an AI (Claude) and only compared with transcriptions by another AI (Codex). Agreement between AIs is not a substitute for human checking |
 | Figures | Independent second transcription (Codex, one run without seeing the first, in a fresh context after the first was corrected): 94.6% letter agreement / Control: the final table of Telegram 1 matches 102 of the 107 printed characters / Calibration: 54 of the 59 uncorrected groups match the print (the other 5 are textual differences). No key-shuffling control (no key is estimated in this system). Details in [docs/METHOD.en.md](docs/METHOD.en.md) |
@@ -122,7 +122,7 @@ See [SOURCES.md](SOURCES.md#english) for full references.
   - the prior repository's transcription.
 
   Disagreements were rechecked against the images, and 5 words were corrected (see [docs/VERIFICATION.en.md](docs/VERIFICATION.en.md)). Because this comparison was used for the corrections, it is not reported as an independent figure. After the corrections, Codex read the images once more in a fresh context without seeing any answer (the independent second transcription); letter agreement was 94.6% (see [docs/METHOD.en.md](docs/METHOD.en.md)).
-- Parts of the work were run automatically until a goal was reached, using Claude Code's /goal feature.
+- Parts of the work were carried out by the AI continuously, without a person checking each step.
 - **Models used**
   - Claude: Claude Opus 5.5 (`claude-opus-5-5`). The three helper agents used during the work ran on the same model.
   - Transcription cross-check: OpenAI Codex (`codex-cli 0.163.0-alpha.10.2`, model `gpt-6.1-sol`).
