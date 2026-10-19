@@ -1,0 +1,51 @@
+段階,語番号または組番号,元の綴り,修正後,理由,確度,根拠
+語,13,etekassise,etekashise,筆記体の ss を sh と読む。テカシ＝起,高,刊本一致
+語,17,nohiinihek,noheenihek,ii を ee と読む。スイノ＝短、ヘエニ＝適,高,刊本一致・先行リポジトリの転写と一致
+語,18,awakaasene,ahakaaseni,wa を ha、末尾の ne を ni と読む。ヘカハ＝逢、ニアシ＝歸,高,刊本一致
+語,19,ashieketai,ashiEketai,e をヱとする（ローマ字ではエ／ヱの区別がない）。ヱケタ＝願,高,刊本一致・日本側の書き込み「願」
+語,20,kotoakushok,kotoakuhoh,s に見える字を h の書き始めと読み、末尾を h とする。アクホ＝不、ヘオナ＝遺,高,刊本一致
+語,24,oohakaoika,oohakaohika,oi を ohi と読む（h の読み落とし）。カオヒ＝倡,高,刊本一致・日本側の書き込み「倡」
+語,27,shisiolu,shisiou,l を余分な1字として除く。ウコセ＝略,高,刊本一致
+語,29,nakuttawaka,nakutawaka,tt を t とする。ナクタ＝國,高,刊本一致
+語,32,irakuewhik,irakuehik,w を余分な1字として除く（区切りを保つため）。58組目は刊本で補う,中,区切りの整合
+語,35,usawaktaae,usahakoteae,wakt を hakote と読む（wa/ha の取り違えと e の脱落）。ハコテ＝外、アエヌ＝交,中,刊本一致
+語,38,hehaketsny,hehaketsuy,n を u と読む。ハケツ＝大,高,刊本一致
+語,43,kifuketaha,hifuketaha,k を h と読む（前の語末の s と合わせて shi）。タアシ＝唐,高,刊本一致
+語,44,ahiyaknush,ahiyakunush,u を補う。ヤクヌ＝岑,高,刊本一致
+語,45,iutoriasac,ietoriasoc,u を e、a を o と読む。シエト＝春、リアソ＝煊,高,刊本一致
+語,46,huuchitaka,hiuchitaka,hu を hi と読む。チウチ＝梁,高,刊本一致
+語,48,aanaekesoa,aanaEkesoa,e をヱとする。ヱケソ＝顯,高,刊本一致
+語,49,uerekoteni,uherekoteni,h を補う。アウヘ＝世,高,刊本一致
+語,52,aikutaitek,aitataitek,ku を ta と読む。カイタ＝光,高,刊本一致・先行リポジトリの転写と一致
+語,55,tachiofure,tachiafuri,o を a、re を ri と読む。チアフ＝李、リオツ＝烈,高,刊本一致
+語,57,coterriatsu,eoteriatsu,c を e と読み、重複した r を除く。レオテ＝陳、リアツ＝炳,高,刊本一致
+語,58,nikochitak,rikochitak,n を r と読む。リコチ＝焜,高,刊本一致・先行リポジトリの転写と一致
+語,66,aakotomases,aakotomaus,se を u と読む。マウソ＝定（以定進行方略）,中,文脈
+語,71,kaenukikoc,kaenikikoc,nu を ni と読む。カエニ＝僅（軍務院僅擁虛名）,中,文脈（0274↔0284 の1桁違い）
+語,79,sakushichi,sakushita,chi を ta と読む。タオチ＝和（協和軍。協和は李烈鈞の字）,中,文脈
+語,82,takunesoan,takunesoanu,n をヌとする。ソアヌ＝齊（旬內可齊）,中,文脈
+語,83,tauhenotae,tauheuotaE,no を uo と読み、末尾の e をヱとする。ウオタ＝由、ヱコナ＝韶,中,李烈鈞軍の進路（韶州）。日本側の書き込みは同じ旁の「詔」。ローマ字ではエコナ＝蘿と区別できない
+語,85,easuekahik,easuEkahik,e をヱとする。ヱカヒ＝非,中,文脈・日本側の書き込み「非」
+語,87,athesakush,aohesakush,th を oh と読む。タオヘ＝卿（幹卿＝陸榮廷の字）,中,文脈
+語,88,ichitochica,itaochika,chito を tao、chica を chika と読む。タオチ＝和、カオセ＝兵,中,文脈・日本側の書き込み「和」「兵」
+語,92,iwatunorea,iwakunorea,tu を ku と読む。ワクノ＝恐,中,文脈
+語,93,shikutenas,shikukenas,te を ke と読む。クケナ＝發,中,文脈
+語,96,takaonomie,takaononie,m を n と読む。ニエス＝此,高,文脈・日本側の書き込み「此」
+語,97,sureohishe,sureohishi,末尾の e を i と読む。シクタ＝暫,高,日本側の書き込み「暫」
+語,99,akusoukoho,akutoukoho,so を to と読む。アクト＝代（代理）,中,文脈
+語,101,shiakinomi,suakinomi,shi を su と読む。セコス＝謀（參謀）,中,文脈
+語,106,yakisureif,yakisareif,su を sa と読む。ヤキサ＝師,中,文脈
+語,108,iyunikeiso,eyuuniheiso,先頭の i を e、u を補い、k を h と読む。レイセ＝集、ユウニ＝舊、ヘイソ＝部,中,文脈
+語,121,wakataekat,wakatoekat,ta を to と読む。ワカト＝情,高,日本側の書き込み「情」
+語,122,ominunanuku,omiunanuku,nu を u と読む。ミウナ＝源,高,日本側の書き込み「源」
+語,123,henukufunu,hemukufunu,nu を mu と読む。ムクフ＝羣,中,日本側の書き込み「群」
+語,125,akasnowari,akasuowari,n を u と読む。タカス＝哿、オワリ（終わりの印）,高,日本側の転写「タカス」「オワリ」
+組,48,ニアウ,富,刊本で補う。観測は規則外。置き換えと入れ替えが重なっている,刊本,刊本
+組,49,シシケ,有,刊本で補う。2字目と3字目の入れ替え（シケシ）,刊本,刊本
+組,50,シシオ,方,刊本で補う。観測は規則外,刊本,刊本
+組,52,タヌキ,各,刊本で補う。2字目と3字目の入れ替え（タキヌ）,刊本,刊本
+組,58,ラクエ,復,刊本で補う。ラクシと1字違い,刊本,刊本
+組,164,テアシ,贑,推定。6381 は表に字がない。贑 6371 の1桁違い。黄興の返電「護國軍能入湘贛」,中,文脈・返電
+組,211,サテフ,出,推定。規則外の組。サキフ＝出と1字違い。直前の「亦卽出贑」と同じ言い回し,中,文脈・返電
+組,223,ヌクヘ,楷,推定。ニクヘ＝楷と1字目だけ違う。返電の宛先「崧」＝程子楷（字は崧生）,中,文脈・返電
+組,225,ヌアタ,泰,推定。ヒアタ＝泰と1字目だけ違う。返電の宛先「鬯」＝楊永泰（字は鬯卿）,中,文脈・返電
