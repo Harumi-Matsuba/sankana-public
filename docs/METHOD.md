@@ -2,7 +2,7 @@
 
 **日本語** ｜ [English](METHOD.en.md)
 
-版 v0.1（2026-10-20）。詳しい手順は [DECIPHERMENT.md](DECIPHERMENT.md)、照合の細部は [VERIFICATION.md](VERIFICATION.md) にある。この文書は、それらの要点と数字をまとめたもの。
+詳しい手順は [DECIPHERMENT.md](DECIPHERMENT.md)、照合の細部は [VERIFICATION.md](VERIFICATION.md) にある。この文書は、それらの要点と数字をまとめたもの。
 
 ## 1. 方法
 1. **書き起こし（1回目）**：Claude が JACAR B03050089100 コマ0076〜0078 の画像を拡大して、ローマ字を1字ずつ読んだ（`data/romaji_raw.txt`、126語・1,265字）。

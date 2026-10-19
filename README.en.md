@@ -4,14 +4,11 @@
 
 | | |
 |---|---|
-| Version | **v0.1** (2026-10-20) |
 | Status | **Full reading** (both telegrams, all 229 groups read; 4 groups of Telegram 2 are inferred) |
 | Relation to prior work | Telegram 1 is **reproduced**: the formula is Satoshi Tomokiyo's, and its printed plaintext was first identified by saberwatchmanga/sun-circle-cipher-1916. New here are the continuous reading of Telegram 2 and the identification of its six senders (see "What is new" below) |
 | Human checking | **No human has checked the transcription.** The romaji was transcribed by an AI (Claude) and only compared with transcriptions by another AI (Codex). Agreement between AIs is not a substitute for human checking |
 | Figures | Second transcription (Codex, three runs without seeing the first): 94.0–94.3% letter agreement / Control: the final table of Telegram 1 matches 102 of the 107 printed characters / Calibration: 54 of the 59 uncorrected groups match the print (the other 5 are textual differences). No key-shuffling control (no key is estimated in this system). Details in [docs/METHOD.en.md](docs/METHOD.en.md) |
 | Use of AI | Transcription, converter, correction search, checks and documents by Claude (Claude Opus 5.5); second transcription by OpenAI Codex. The human directed the work and reviewed the results (see "Use of AI" below) |
-
-v0.1 is the first version to carry a number. It is not v1.0 because no human has checked the transcription, and Telegram 2 still contains inferred and medium-certainty readings ([docs/OPEN.en.md](docs/OPEN.en.md)), so the reading may change. The version will be raised, with the changes listed here, whenever the key (formula) or the reading changes.
 
 This repository records a full reading of two cipher telegrams to Huang Xing (黄興), dated 20 May 1916. The Japanese Foreign Ministry copied them at the time. They are read here with the known conversion formula.
 - **Source**: Japanese Foreign Ministry records, 特定人ノ発受郵便物取調 vol. 3, JACAR B03050089100.
@@ -86,7 +83,7 @@ All 229 groups are tabulated in `data/groups.csv`.
 | `tests/` | Tests of the formula, the reply, and table consistency |
 | `docs/` | Method, figures, use of AI and limits (METHOD), decipherment record (DECIPHERMENT), verification (VERIFICATION), open questions (OPEN). English versions are `*.en.md` |
 | `second/` | Second transcription: three blind transcriptions by Codex (`codex_run*.txt`; `*_raw.txt` is the unedited output, `*_events.jsonl` the run log) and the prompt. Agreement is computed by `src/second.py` |
-| `CITATION.cff` | Citation information (version, date) |
+| `CITATION.cff` | Citation information (author, date) |
 | `data/README.md` | Meaning of the files, columns and categories in `data/`. Japanese and English |
 
 ## Usage

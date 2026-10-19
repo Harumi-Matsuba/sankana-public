@@ -2,7 +2,7 @@
 
 [日本語](METHOD.md) ｜ **English**
 
-Version v0.1 (2026-10-20). The full procedure is in [DECIPHERMENT.en.md](DECIPHERMENT.en.md) and the details of each check in [VERIFICATION.en.md](VERIFICATION.en.md). This document summarizes their main points and figures.
+The full procedure is in [DECIPHERMENT.en.md](DECIPHERMENT.en.md) and the details of each check in [VERIFICATION.en.md](VERIFICATION.en.md). This document summarizes their main points and figures.
 
 ## 1. Method
 1. **Transcription (first pass)**: Claude read the romaji letter by letter from enlarged images of JACAR B03050089100, frames 0076–0078 (`data/romaji_raw.txt`, 126 words, 1,265 letters).
