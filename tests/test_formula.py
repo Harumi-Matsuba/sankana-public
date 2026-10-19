@@ -10,7 +10,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(ROOT / 'src'))
 
-from kana import decode, encode, groups_from_words, load_ctc, tokenize  # noqa: E402
+from kana import decode, encode, groups_from_words, load_ctc, read_words, tokenize  # noqa: E402
 import build_groups  # noqa: E402
 
 # 友清理士氏の一覧（Cryptiana, chinesecrypto_e2.htm）にある、電碼・字・仮名の対応の一部
@@ -91,6 +91,18 @@ class TestTable(unittest.TestCase):
                 if r['電碼']:
                     self.assertEqual(decode(r['仮名']), int(r['電碼']), r)
                     self.assertEqual(ctc[int(r['電碼'])], r['字'], r)
+
+    def test_second_copy_alignment(self):
+        # 第二の写し（data/romaji_copy2.txt）は同じ126語で、綴りが違うのは12語
+        raw = read_words(ROOT / 'data' / 'romaji_raw.txt')
+        copy2 = [w.replace('°', 'o') for w in read_words(ROOT / 'data' / 'romaji_copy2.txt')]
+        self.assertEqual(len(copy2), len(raw))
+        diff = [i for i, (a, b) in enumerate(zip(raw, copy2)) if a != b]
+        self.assertEqual(diff, [5, 17, 20, 34, 35, 43, 45, 52, 57, 108, 121, 123])
+        # この解読で直した綴りが、第二の写しにそのまま書かれている5語
+        corrected = build_groups.corrected_words()
+        for i in (17, 43, 52, 121, 123):
+            self.assertEqual(copy2[i], corrected[i], i)
 
     def test_group_count_and_signature(self):
         rows = build_groups.build()
