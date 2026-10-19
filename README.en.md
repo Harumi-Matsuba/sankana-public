@@ -105,6 +105,9 @@ See `SOURCES.md` for full references (in Japanese).
 
   Disagreements were rechecked against the images, and 5 words were corrected (see `docs/VERIFICATION.md`).
 - Parts of the work were run automatically until a goal was reached, using Claude Code's /goal feature.
+- **Models used**
+  - Claude: Claude Opus 5.5 (`claude-opus-5-5`). The three helper agents used during the work ran on the same model.
+  - Transcription cross-check: OpenAI Codex (`codex-cli 0.163.0-alpha.10.2`, model `gpt-6.1-sol`).
 - AI readings and judgments can be wrong. The grounds and certainty of each correction are given in `data/corrections.csv` and `docs/OPEN.md`. Please check against the original JACAR images.
 
 ## License

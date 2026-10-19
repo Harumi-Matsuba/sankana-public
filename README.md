@@ -101,6 +101,9 @@ python3 -m unittest discover -s tests
 
   食い違った箇所は画像で見直し、5語を直しました（[docs/VERIFICATION.md](docs/VERIFICATION.md)）。
 - 作業の一部は、Claude Code の /goal 機能で、目標に達するまで自動で続けさせました。
+- **使ったモデル**
+  - Claude：Claude Opus 5.5（`claude-opus-5-5`）。作業の途中で使った補助のエージェント3つも、同じモデル。
+  - 転写の照合：OpenAI の Codex（`codex-cli 0.163.0-alpha.10.2`、モデル `gpt-6.1-sol`）。
 - AI の読みや判断には、誤りがありえます。修正の根拠と確度は `data/corrections.csv` と `docs/OPEN.md` に書きました。原資料（JACAR の画像）で確かめてください。
 
 ## ライセンス
