@@ -5,7 +5,7 @@
 | | |
 |---|---|
 | Status | **Full reading** (both telegrams, all 229 groups read; 4 groups of Telegram 2 are inferred) |
-| Relation to prior work | Telegram 1 is **reproduced**: the formula is Satoshi Tomokiyo's, and its printed plaintext was first identified by saberwatchmanga/sun-circle-cipher-1916. New here are the continuous reading of Telegram 2 and the identification of its six senders (see "What is new" below) |
+| Relation to prior work | Telegram 1 is **reproduced**: the formula is Satoshi Tomokiyo's, and its printed plaintext was first identified by saberwatchmanga/sun-circle-cipher-1916. This work adds the continuous reading of Telegram 2 and the identification of its six senders (see "What this decipherment adds" below). These include groups left blank in the prior repository, but no independent prior-work check by a separate session has been done yet, so this is not claimed as a first |
 | Human checking | **No human has checked the transcription.** The romaji was transcribed by an AI (Claude) and only compared with transcriptions by another AI (Codex). Agreement between AIs is not a substitute for human checking |
 | Figures | Independent second transcription (Codex, one run without seeing the first, in a fresh context after the first was corrected): 94.6% letter agreement / Control: the final table of Telegram 1 matches 102 of the 107 printed characters / Calibration: 54 of the 59 uncorrected groups match the print (the other 5 are textual differences). No key-shuffling control (no key is estimated in this system). Details in [docs/METHOD.en.md](docs/METHOD.en.md) |
 | Use of AI | Transcription, converter, correction search, checks and documents by Claude (Claude Opus 5.5); second transcription by OpenAI Codex. The human directed the work and reviewed the results (see "Use of AI" below) |
@@ -38,7 +38,7 @@ All 229 groups are tabulated in `data/groups.csv`.
   - The signatories were identified using the addressees 隱印崧詔鬯行. These come from the cipher text of Huang Xing's reply (JACAR B03050731500).
 - Inferred readings, medium-certainty corrections and the prior repository's caveats are discussed in [docs/OPEN.en.md](docs/OPEN.en.md).
 
-## What is new in this decipherment
+## What this decipherment adds
 **Prior work this relies on**
 - The three-kana conversion formula and partial readings from the worksheets: Satoshi Tomokiyo.
 - The plaintext of Telegram 1 (identification of the print): the prior repository saberwatchmanga/sun-circle-cipher-1916.
@@ -82,7 +82,7 @@ All 229 groups are tabulated in `data/groups.csv`.
 | `src/` | Converter and tools (`kana.py`, `second.py`, `build_groups.py`, `check.py`, `fix.py`, `beam.py`, `lm.py`, `build_ctc.py`) |
 | `tests/` | Tests of the formula, the reply, and table consistency |
 | `docs/` | Method, figures, use of AI and limits (METHOD), decipherment record (DECIPHERMENT), verification (VERIFICATION), open questions (OPEN). English versions are `*.en.md` |
-| `second/` | Blind transcriptions by Codex: the independent second transcription (`codex_run4.txt`) and the three cross-check runs used to correct the first (`codex_run1–3.txt`). `*_raw.txt` is the unedited output, `*_events.jsonl` the run log; the prompt is `codex_prompt.txt`. Agreement is computed by `src/second.py` |
+| `second/` | Blind transcriptions by Codex (the list of words corrected and not corrected after the cross-check is `crosscheck_decisions.tsv`): the independent second transcription (`codex_run4.txt`) and the three cross-check runs used to correct the first (`codex_run1–3.txt`). `*_raw.txt` is the unedited output, `*_events.jsonl` the run log; the prompt is `codex_prompt.txt`. Agreement is computed by `src/second.py` |
 | `data/README.md` | Meaning of the files, columns and categories in `data/`. Japanese and English |
 
 ## Usage

@@ -12,6 +12,7 @@ Codex の不確かな字の候補（[a/o]）は外し、最初の読みだけを
 import collections
 import difflib
 import re
+import sys
 from pathlib import Path
 
 from kana import read_words
@@ -70,6 +71,36 @@ def compare():
     return out
 
 
+# 照合（1〜3回目）を見て直した5語。語番号（0から）→（照合した時点の綴り、直した後の綴り）
+FIXED = {46: ('huuchitaka', 'hiuchitaka'), 58: ('nikochitak', 'rikochitak'), 63: ('echiuashit', 'echinashit'),
+         96: ('takaonomie', 'takaononie'), 116: ('esatefumika', 'esatefmika')}
+
+
+def crosscheck_rows():
+    """照合した時点の1回目と Codex 1〜3回目の多数の読みが違った語と、その扱い。"""
+    ours = [w.lower() for w in read_words(ROOT / 'data' / 'romaji_raw.txt')]
+    old = list(ours)
+    for i, (before, after) in FIXED.items():
+        assert ours[i] == after
+        old[i] = before
+    runs = [read_codex(ROOT / 'second' / f'codex_run{r}.txt') for r in (1, 2, 3)]
+    rows = []
+    for i, w in enumerate(old):
+        top, n = collections.Counter(r[i] for r in runs).most_common(1)[0]
+        if n < 2 or top == w:
+            continue
+        if i in FIXED:
+            d = '直した：画像で確かめて、1回目の読み違いと判断 / corrected: confirmed on the image as a misreading in the first pass'
+        elif i == 121:
+            d = ('直さない：画像で a の上に小さな o の書き足しを確かめ、字どおりの転写は残し、corrections.csv の修正の根拠に加えた'
+                 ' / not changed: the small o written above the a was confirmed on the image; kept in the literal transcription and added to the grounds of the correction in corrections.csv')
+        else:
+            d = ('直さない：Codex の読みを当てると解読が崩れる（内訳は VERIFICATION.md 第2節）。画像で確かめた記録はない'
+                 ' / not changed: the Codex reading breaks the decoding (breakdown in VERIFICATION §2); no record of an image check')
+        rows.append((i, w, top, ours[i], d))
+    return rows
+
+
 def main():
     r = compare()
     print(f"romaji_raw.txt: {r['words']} 語・{r['letters']} 字")
@@ -86,4 +117,11 @@ def main():
 
 
 if __name__ == '__main__':
-    main()
+    if '--crosscheck' in sys.argv:
+        print('# EN: Words where the majority of Codex runs 1-3 differed from the first transcription at the time of the check (python3 src/second.py --crosscheck). word number (from 0), first transcription at the time, Codex majority, current data/romaji_raw.txt, decision')
+        print('# 照合した時点の1回目と、Codex 1〜3回目の多数の読みが違った語。語番号（0から）、照合した時点の1回目、Codex の多数、今の data/romaji_raw.txt、扱い')
+        print('word\tfirst_at_check\tcodex_majority\tcurrent\tdecision')
+        for r in crosscheck_rows():
+            print('\t'.join(map(str, r)))
+    else:
+        main()

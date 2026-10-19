@@ -1,0 +1,45 @@
+# EN: Words where the majority of Codex runs 1-3 differed from the first transcription at the time of the check (python3 src/second.py --crosscheck). word number (from 0), first transcription at the time, Codex majority, current data/romaji_raw.txt, decision
+# 照合した時点の1回目と、Codex 1〜3回目の多数の読みが違った語。語番号（0から）、照合した時点の1回目、Codex の多数、今の data/romaji_raw.txt、扱い
+word	first_at_check	codex_majority	current	decision
+0	sokahokaet	sokakokat	sokahokaet	直さない：Codex の読みを当てると解読が崩れる（内訳は VERIFICATION.md 第2節）。画像で確かめた記録はない / not changed: the Codex reading breaks the decoding (breakdown in VERIFICATION §2); no record of an image check
+2	atauichire	atawichire	atauichire	直さない：Codex の読みを当てると解読が崩れる（内訳は VERIFICATION.md 第2節）。画像で確かめた記録はない / not changed: the Codex reading breaks the decoding (breakdown in VERIFICATION §2); no record of an image check
+3	uhohaetasa	ehokaetasa	uhohaetasa	直さない：Codex の読みを当てると解読が崩れる（内訳は VERIFICATION.md 第2節）。画像で確かめた記録はない / not changed: the Codex reading breaks the decoding (breakdown in VERIFICATION §2); no record of an image check
+11	suenaraane	suenaraare	suenaraane	直さない：Codex の読みを当てると解読が崩れる（内訳は VERIFICATION.md 第2節）。画像で確かめた記録はない / not changed: the Codex reading breaks the decoding (breakdown in VERIFICATION §2); no record of an image check
+15	niusuwaish	niusiwaish	niusuwaish	直さない：Codex の読みを当てると解読が崩れる（内訳は VERIFICATION.md 第2節）。画像で確かめた記録はない / not changed: the Codex reading breaks the decoding (breakdown in VERIFICATION §2); no record of an image check
+16	ifukihisui	ifukikisui	ifukihisui	直さない：Codex の読みを当てると解読が崩れる（内訳は VERIFICATION.md 第2節）。画像で確かめた記録はない / not changed: the Codex reading breaks the decoding (breakdown in VERIFICATION §2); no record of an image check
+17	nohiinihek	nohinikek	nohiinihek	直さない：Codex の読みを当てると解読が崩れる（内訳は VERIFICATION.md 第2節）。画像で確かめた記録はない / not changed: the Codex reading breaks the decoding (breakdown in VERIFICATION §2); no record of an image check
+24	oohakaoika	eohakaoika	oohakaoika	直さない：Codex の読みを当てると解読が崩れる（内訳は VERIFICATION.md 第2節）。画像で確かめた記録はない / not changed: the Codex reading breaks the decoding (breakdown in VERIFICATION §2); no record of an image check
+28	kosetanuki	kosetanaki	kosetanuki	直さない：Codex の読みを当てると解読が崩れる（内訳は VERIFICATION.md 第2節）。画像で確かめた記録はない / not changed: the Codex reading breaks the decoding (breakdown in VERIFICATION §2); no record of an image check
+29	nakuttawaka	nakuttawake	nakuttawaka	直さない：Codex の読みを当てると解読が崩れる（内訳は VERIFICATION.md 第2節）。画像で確かめた記録はない / not changed: the Codex reading breaks the decoding (breakdown in VERIFICATION §2); no record of an image check
+34	sukaosokik	eukaosokik	sukaosokik	直さない：Codex の読みを当てると解読が崩れる（内訳は VERIFICATION.md 第2節）。画像で確かめた記録はない / not changed: the Codex reading breaks the decoding (breakdown in VERIFICATION §2); no record of an image check
+35	usawaktaae	usawoktaee	usawaktaae	直さない：Codex の読みを当てると解読が崩れる（内訳は VERIFICATION.md 第2節）。画像で確かめた記録はない / not changed: the Codex reading breaks the decoding (breakdown in VERIFICATION §2); no record of an image check
+37	soiisuyaku	soiisuyakui	soiisuyaku	直さない：Codex の読みを当てると解読が崩れる（内訳は VERIFICATION.md 第2節）。画像で確かめた記録はない / not changed: the Codex reading breaks the decoding (breakdown in VERIFICATION §2); no record of an image check
+40	uatawakete	eatawakete	uatawakete	直さない：Codex の読みを当てると解読が崩れる（内訳は VERIFICATION.md 第2節）。画像で確かめた記録はない / not changed: the Codex reading breaks the decoding (breakdown in VERIFICATION §2); no record of an image check
+44	ahiyaknush	ahiyakanush	ahiyaknush	直さない：Codex の読みを当てると解読が崩れる（内訳は VERIFICATION.md 第2節）。画像で確かめた記録はない / not changed: the Codex reading breaks the decoding (breakdown in VERIFICATION §2); no record of an image check
+46	huuchitaka	hiuchitaka	hiuchitaka	直した：画像で確かめて、1回目の読み違いと判断 / corrected: confirmed on the image as a misreading in the first pass
+52	aikutaitek	aitutaitek	aikutaitek	直さない：Codex の読みを当てると解読が崩れる（内訳は VERIFICATION.md 第2節）。画像で確かめた記録はない / not changed: the Codex reading breaks the decoding (breakdown in VERIFICATION §2); no record of an image check
+56	otsumeenur	otuumeenur	otsumeenur	直さない：Codex の読みを当てると解読が崩れる（内訳は VERIFICATION.md 第2節）。画像で確かめた記録はない / not changed: the Codex reading breaks the decoding (breakdown in VERIFICATION §2); no record of an image check
+58	nikochitak	rikochitak	rikochitak	直した：画像で確かめて、1回目の読み違いと判断 / corrected: confirmed on the image as a misreading in the first pass
+63	echiuashit	echinashit	echinashit	直した：画像で確かめて、1回目の読み違いと判断 / corrected: confirmed on the image as a misreading in the first pass
+64	akitokaase	ukitokaase	akitokaase	直さない：Codex の読みを当てると解読が崩れる（内訳は VERIFICATION.md 第2節）。画像で確かめた記録はない / not changed: the Codex reading breaks the decoding (breakdown in VERIFICATION §2); no record of an image check
+66	aakotomases	aakotomeses	aakotomases	直さない：Codex の読みを当てると解読が崩れる（内訳は VERIFICATION.md 第2節）。画像で確かめた記録はない / not changed: the Codex reading breaks the decoding (breakdown in VERIFICATION §2); no record of an image check
+68	nishionouk	nishionauk	nishionouk	直さない：Codex の読みを当てると解読が崩れる（内訳は VERIFICATION.md 第2節）。画像で確かめた記録はない / not changed: the Codex reading breaks the decoding (breakdown in VERIFICATION §2); no record of an image check
+71	kaenukikoc	kaemukikor	kaenukikoc	直さない：Codex の読みを当てると解読が崩れる（内訳は VERIFICATION.md 第2節）。画像で確かめた記録はない / not changed: the Codex reading breaks the decoding (breakdown in VERIFICATION §2); no record of an image check
+72	hieatetain	hieatetaia	hieatetain	直さない：Codex の読みを当てると解読が崩れる（内訳は VERIFICATION.md 第2節）。画像で確かめた記録はない / not changed: the Codex reading breaks the decoding (breakdown in VERIFICATION §2); no record of an image check
+76	ioshikuoto	ioshikaoto	ioshikuoto	直さない：Codex の読みを当てると解読が崩れる（内訳は VERIFICATION.md 第2節）。画像で確かめた記録はない / not changed: the Codex reading breaks the decoding (breakdown in VERIFICATION §2); no record of an image check
+82	takunesoan	takinesoan	takunesoan	直さない：Codex の読みを当てると解読が崩れる（内訳は VERIFICATION.md 第2節）。画像で確かめた記録はない / not changed: the Codex reading breaks the decoding (breakdown in VERIFICATION §2); no record of an image check
+86	auhoraahit	auhoraatit	auhoraahit	直さない：Codex の読みを当てると解読が崩れる（内訳は VERIFICATION.md 第2節）。画像で確かめた記録はない / not changed: the Codex reading breaks the decoding (breakdown in VERIFICATION §2); no record of an image check
+89	osekaesomi	osekaesoni	osekaesomi	直さない：Codex の読みを当てると解読が崩れる（内訳は VERIFICATION.md 第2節）。画像で確かめた記録はない / not changed: the Codex reading breaks the decoding (breakdown in VERIFICATION §2); no record of an image check
+91	takotoakan	takotoakon	takotoakan	直さない：Codex の読みを当てると解読が崩れる（内訳は VERIFICATION.md 第2節）。画像で確かめた記録はない / not changed: the Codex reading breaks the decoding (breakdown in VERIFICATION §2); no record of an image check
+94	ekanookuno	ekanookano	ekanookuno	直さない：Codex の読みを当てると解読が崩れる（内訳は VERIFICATION.md 第2節）。画像で確かめた記録はない / not changed: the Codex reading breaks the decoding (breakdown in VERIFICATION §2); no record of an image check
+95	hikuhoseku	hikehoseku	hikuhoseku	直さない：Codex の読みを当てると解読が崩れる（内訳は VERIFICATION.md 第2節）。画像で確かめた記録はない / not changed: the Codex reading breaks the decoding (breakdown in VERIFICATION §2); no record of an image check
+96	takaonomie	takaononie	takaononie	直した：画像で確かめて、1回目の読み違いと判断 / corrected: confirmed on the image as a misreading in the first pass
+99	akusoukoho	akusoukolo	akusoukoho	直さない：Codex の読みを当てると解読が崩れる（内訳は VERIFICATION.md 第2節）。画像で確かめた記録はない / not changed: the Codex reading breaks the decoding (breakdown in VERIFICATION §2); no record of an image check
+105	uesunaechi	uusunaechi	uesunaechi	直さない：Codex の読みを当てると解読が崩れる（内訳は VERIFICATION.md 第2節）。画像で確かめた記録はない / not changed: the Codex reading breaks the decoding (breakdown in VERIFICATION §2); no record of an image check
+112	sunikuhese	sunikulese	sunikuhese	直さない：Codex の読みを当てると解読が崩れる（内訳は VERIFICATION.md 第2節）。画像で確かめた記録はない / not changed: the Codex reading breaks the decoding (breakdown in VERIFICATION §2); no record of an image check
+116	esatefumika	esatefmika	esatefmika	直した：画像で確かめて、1回目の読み違いと判断 / corrected: confirmed on the image as a misreading in the first pass
+119	kehiyekohi	kekiyekohi	kehiyekohi	直さない：Codex の読みを当てると解読が崩れる（内訳は VERIFICATION.md 第2節）。画像で確かめた記録はない / not changed: the Codex reading breaks the decoding (breakdown in VERIFICATION §2); no record of an image check
+120	heanuheiho	heanaheiho	heanuheiho	直さない：Codex の読みを当てると解読が崩れる（内訳は VERIFICATION.md 第2節）。画像で確かめた記録はない / not changed: the Codex reading breaks the decoding (breakdown in VERIFICATION §2); no record of an image check
+121	wakataekat	wakatoekat	wakataekat	直さない：画像で a の上に小さな o の書き足しを確かめ、字どおりの転写は残し、corrections.csv の修正の根拠に加えた / not changed: the small o written above the a was confirmed on the image; kept in the literal transcription and added to the grounds of the correction in corrections.csv
+122	ominunanuku	oomiunanuku	ominunanuku	直さない：Codex の読みを当てると解読が崩れる（内訳は VERIFICATION.md 第2節）。画像で確かめた記録はない / not changed: the Codex reading breaks the decoding (breakdown in VERIFICATION §2); no record of an image check
+123	henukufunu	hemukafunu	henukufunu	直さない：Codex の読みを当てると解読が崩れる（内訳は VERIFICATION.md 第2節）。画像で確かめた記録はない / not changed: the Codex reading breaks the decoding (breakdown in VERIFICATION §2); no record of an image check
