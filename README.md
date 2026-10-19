@@ -69,7 +69,8 @@
 | `data/ctc_kTaiwanTelegraph.tsv` | 電碼→漢字の表（Unicode Unihan から抽出） |
 | `src/` | 変換器と道具（`kana.py`、`build_groups.py`、`check.py`、`fix.py`、`beam.py`、`lm.py`、`build_ctc.py`） |
 | `tests/` | 変換式・返電・表の整合のテスト |
-| `docs/` | 解読の記録（DECIPHERMENT）、検証（VERIFICATION）、未解決の点（OPEN） |
+| `docs/` | 解読の記録（DECIPHERMENT）、検証（VERIFICATION）、未解決の点（OPEN）。日本語と英語 |
+| `data/README.md` | data/ のファイル・列・区分の説明。日本語と英語 |
 
 ## 使い方
 Python 3 の標準ライブラリだけで動きます（`fix.py`・`beam.py` を除く）。

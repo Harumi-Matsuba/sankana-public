@@ -1,5 +1,7 @@
 # 出典
 
+**日本語** ｜ [English](#english)
+
 ## 一次資料（リポジトリには含めていない）
 - **JACAR（アジア歴史資料センター）B03050089100**
   - 外務省記録 1.6.1.4-2-1-2「各国内政関係雑纂／支那ノ部／革命党関係（亡命者ヲ含ム）／特定人ノ発受郵便物取調」第3巻（外務省外交史料館）
@@ -52,3 +54,62 @@
   - 本文はこのリポジトリに含めていない。
 - 李烈鈞の軍の動き（1916年6月19日の韶州での戦闘）：中国語版 Wikipedia「李烈鈞」による。
 - 陸榮廷の字が幹卿であること：梁啓超『從軍日記』などによる。
+
+---
+
+<a id="english"></a>
+
+# Sources (English)
+
+## Primary sources (not included in this repository)
+- **JACAR (Japan Center for Asian Historical Records) B03050089100**
+  - Japanese Foreign Ministry records 1.6.1.4-2-1-2, 「各国内政関係雑纂／支那ノ部／革命党関係（亡命者ヲ含ム）／特定人ノ発受郵便物取調」, vol. 3 (Diplomatic Archives of the Ministry of Foreign Affairs of Japan)
+  - Frames 0076–0078: the romaji cipher text
+  - Frames 0079–0081: Japanese analysts' worksheets
+  - https://www.jacar.archives.go.jp/das/meta/B03050089100
+- **JACAR B03050731100**: Japanese Foreign Ministry records 「袁世凱帝制計画一件（極秘）／反袁動乱及各地状況」, vol. 15, item "1 大正5年4月29日から大正5年5月22日". Consul Ōta's telegram no. 42 from Zhaoqing (sent 21 May 1916), on images 24–26, contains a second copy of the same cipher text and a summary of both telegrams.
+  - https://www.jacar.archives.go.jp/das/meta/B03050731100
+- **JACAR B03050731500**: Huang Xing's reply (25 May 1916)
+  - https://www.jacar.archives.go.jp/das/meta/B03050731500
+
+Images and PDFs are not redistributed. Please refer to them by frame number.
+
+## Printed texts
+- **『護國軍紀事』 no. 5 (1916), 「軍政府歡迎黃克強電」**
+  - Wikimedia Commons (as given by the prior repository): https://commons.wikimedia.org/wiki/File:SSID-11382807_護國軍紀事_第5期.pdf
+  - The comparison used the prior repository's (below) manual transliteration. The text is not included in this repository.
+- **『近代史資料』 no. 50, p. 123, 「致肇慶軍務院電」** (the printed text of Huang Xing's reply)
+  - Its footnote identifying the addressees (Zeng Qiheng, Zhao Zhengping) is discussed in [docs/OPEN.md](docs/OPEN.md#english).
+
+## Prior work
+- Satoshi Tomokiyo, "Solution of Two Chinese Cipher Telegrams Archived in Japan (1916)", Cryptiana
+  - https://cryptiana.web.fc2.com/code/chinesecrypto_e2.htm (first posted 18 September 2026, updated 23 September)
+  - The three-kana formula. The 15 code–kana pairs used in the tests, the romaji of Huang Xing's reply (all 31 words) and its correction (O HI → CHI) come from this page.
+- saberwatchmanga/sun-circle-cipher-1916
+  - https://github.com/saberwatchmanga/sun-circle-cipher-1916 (version of 10 October 2026)
+  - Identification and transliteration of the print of Telegram 1. Its caveats are listed in docs/OPEN.md. No files of that repository are included here.
+- D. Bourdeau, cyphersolver (the transliteration of the contemporary Japanese copy of Huang Xing's reply is from https://dbourdeau.github.io/cyphersolver/huangxing.html)
+  - https://github.com/dbourdeau/cyphersolver
+  - https://dbourdeau.github.io/cyphersolver/sunintercepts.html
+
+## Data
+- **Unicode Unihan database** (Unicode 18.0.0)
+  - kTaiwanTelegraph (telegraph code → character)
+  - kSimplifiedVariant (`src/lm.py` only)
+  - https://www.unicode.org/Public/UCD/latest/ucd/Unihan.zip
+  - © Unicode, Inc. Terms of use https://www.unicode.org/terms_of_use.html, license https://www.unicode.org/license.txt
+- **jieba dictionary dict.txt** (`src/lm.py` only; not included in this repository)
+  - https://raw.githubusercontent.com/fxsjy/jieba/master/jieba/dict.txt
+
+## Courtesy names and historical facts
+- Courtesy and art names of Lin Hu, Li Genyuan, Cheng Zikai, Wen Qun, Yang Yongtai, Zhang Shizhao and Zhao Zhengping: from the respective Wikipedia articles. Those of the six, and Zhao Zhengping's (厚生), were also confirmed in the staff lists of 『軍務院考實』 below.
+- **『軍務院考實』 vol. 1 (1916)**
+  - Wikimedia Commons: https://commons.wikimedia.org/wiki/File:NLC416-02jh005230-14942_軍務院考實_第1卷.pdf (public domain, 261 pages)
+  - Used: part 5, the staff lists 「職員錄」 (PDF pp. 247–261): the Military Affairs Council table (Zhang Xiaozhun, delegate in Japan, courtesy name 潤農; Li Genyuan; Zhang Shizhao), the 滇軍 table (Fang Shengtao, commander of the 4th Division), the 林軍 table (Lin Hu, commander-in-chief, courtesy name 隱青), and the 程旅 table (Cheng Zikai, courtesy name 崧生).
+  - The text is not included in this repository.
+- **『軍務院考實』 vol. 2 (1916; including the appendix 『兩廣都司令部考實』)**
+  - Wikimedia Commons: https://commons.wikimedia.org/wiki/File:NLC416-02jh005230-14943_軍務院考實_第2卷.pdf (public domain, 261 pages)
+  - Used: part 6 of 『兩廣都司令部考實』, the staff lists 「職員錄」 (PDF pp. 220–251): the General Staff (Zhao Zhengping, courtesy name 厚生), the Secretariat (Wen Qun, art name 詔雲), the Foreign Affairs Bureau (Wen Qun), and the Finance Department (Yang Yongtai, courtesy name 暢卿).
+  - The text is not included in this repository.
+- Movements of Li Liejun's army (the battle at Shaozhou on 19 June 1916): from the Chinese Wikipedia article 「李烈鈞」.
+- That Lu Rongting's courtesy name is 幹卿: from Liang Qichao's 『從軍日記』 and others.

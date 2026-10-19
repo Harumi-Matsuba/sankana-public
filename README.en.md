@@ -9,7 +9,7 @@ This repository records a full reading of two cipher telegrams to Huang Xing (é»
 - **System**: the "three-kana code". Each Chinese character becomes its 4-digit standard telegraph code. Each code becomes three kana, and the kana are sent in romaji.
 - **Conversion formula**: identified by Satoshi Tomokiyo (Cryptiana).
 
-The detailed documents in `docs/` and the notes in `data/` are written in Japanese. This English README summarizes them.
+The documents in `docs/`, `SOURCES.md` and `data/README.md` are bilingual: Japanese first, then English (use the "English" link at the top of each file). The free-text columns of `data/corrections.csv` and `data/worksheet.csv` have English translations.
 
 ## Status
 All 229 groups are tabulated in `data/groups.csv`.
@@ -73,7 +73,8 @@ All 229 groups are tabulated in `data/groups.csv`.
 | `data/ctc_kTaiwanTelegraph.tsv` | Telegraph code â†’ character table, extracted from Unicode Unihan |
 | `src/` | Converter and tools (`kana.py`, `build_groups.py`, `check.py`, `fix.py`, `beam.py`, `lm.py`, `build_ctc.py`) |
 | `tests/` | Tests of the formula, the reply, and table consistency |
-| `docs/` | Decipherment record (DECIPHERMENT), verification (VERIFICATION), open questions (OPEN). In Japanese |
+| `docs/` | Decipherment record (DECIPHERMENT), verification (VERIFICATION), open questions (OPEN). Japanese and English |
+| `data/README.md` | Meaning of the files, columns and categories in `data/`. Japanese and English |
 
 ## Usage
 Everything except `fix.py` and `beam.py` runs with the Python 3 standard library only.
@@ -97,7 +98,7 @@ python3 -m unittest discover -s tests
   - Comparing with its transcription revealed two errors in mine (groups 39 and 188), which I fixed after rechecking the images.
 - **D. Bourdeau** (cyphersolver): survey of the telegrams in this file series.
 
-See `SOURCES.md` for full references (in Japanese).
+See [SOURCES.md](SOURCES.md#english) for full references.
 
 ## Use of AI
 - Most of this work was done by Claude (Claude Code), an AI by Anthropic:
