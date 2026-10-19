@@ -1,0 +1,18 @@
+You are given 5 images (sheet1.png ... sheet5.png, in this order) of a handwritten document from 1916. Each image shows a block of handwritten groups of lowercase Latin letters in cursive, arranged in rows of 3 groups.
+
+Task: make a strictly literal, letter-by-letter transcription of every group.
+
+Rules:
+- Use ONLY the attached images. Do not open, search or read any file on disk, do not run shell commands, and do not use the web. Do not rely on any prior knowledge of this document.
+- Copy letters exactly as written. Do NOT correct, normalize, or guess words. The groups are not dictionary words; do not force them into words or into a fixed length.
+- If a letter is uncertain, write your best reading followed by the alternatives in brackets, e.g. ko[a/o]ta means the third letter is a or o. If a letter is completely unreadable, write ?.
+- If a letter is written small above the line (an insertion), write it in place with a caret before it, e.g. at^oakitets.
+- Read rows left to right, top to bottom within each sheet.
+
+Output format (plain text, nothing else, no commentary):
+S1 R1: group group group
+S1 R2: group group group
+...
+S5 Rn: group group group
+
+After the transcription, add one final line beginning with "NOTES:" listing (briefly) any places you found especially hard.

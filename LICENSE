@@ -1,7 +1,7 @@
 このリポジトリは、部分ごとに次のライセンスで公開する。
 
 1. コード（src/ と tests/ の中のファイル）: MIT License
-2. 文書とデータの自作部分（README.md、README.en.md、SOURCES.md、docs/、data/README.md、data/romaji_raw.txt、data/romaji_copy2.txt、
+2. 文書とデータの自作部分（README.md、README.en.md、SOURCES.md、docs/、second/、CITATION.cff、data/README.md、data/romaji_raw.txt、data/romaji_copy2.txt、
    data/corrections.csv、data/groups.csv、data/worksheet.csv）:
    Creative Commons Attribution 4.0 International (CC BY 4.0)
    https://creativecommons.org/licenses/by/4.0/

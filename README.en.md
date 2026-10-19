@@ -2,6 +2,17 @@
 
 [日本語版 README](README.md)
 
+| | |
+|---|---|
+| Version | **v0.1** (2026-10-20) |
+| Status | **Full reading** (both telegrams, all 229 groups read; 4 groups of Telegram 2 are inferred) |
+| Relation to prior work | Telegram 1 is **reproduced**: the formula is Satoshi Tomokiyo's, and its printed plaintext was first identified by saberwatchmanga/sun-circle-cipher-1916. New here are the continuous reading of Telegram 2 and the identification of its six senders (see "What is new" below) |
+| Human checking | **No human has checked the transcription.** The romaji was transcribed by an AI (Claude) and only compared with transcriptions by another AI (Codex). Agreement between AIs is not a substitute for human checking |
+| Figures | Second transcription (Codex, three runs without seeing the first): 94.0–94.3% letter agreement / Control: the final table of Telegram 1 matches 102 of the 107 printed characters / Calibration: 54 of the 59 uncorrected groups match the print (the other 5 are textual differences). No key-shuffling control (no key is estimated in this system). Details in [docs/METHOD.en.md](docs/METHOD.en.md) |
+| Use of AI | Transcription, converter, correction search, checks and documents by Claude (Claude Opus 5.5); second transcription by OpenAI Codex. The human directed the work and reviewed the results (see "Use of AI" below) |
+
+v0.1 is the first version to carry a number. It is not v1.0 because no human has checked the transcription, and Telegram 2 still contains inferred and medium-certainty readings ([docs/OPEN.en.md](docs/OPEN.en.md)), so the reading may change. The version will be raised, with the changes listed here, whenever the key (formula) or the reading changes.
+
 This repository records a full reading of two cipher telegrams to Huang Xing (黄興), dated 20 May 1916. The Japanese Foreign Ministry copied them at the time. They are read here with the known conversion formula.
 - **Source**: Japanese Foreign Ministry records, 特定人ノ発受郵便物取調 vol. 3, JACAR B03050089100.
   - Frames 0076–0078: the romanized cipher text.
@@ -9,7 +20,7 @@ This repository records a full reading of two cipher telegrams to Huang Xing (�
 - **System**: the "three-kana code". Each Chinese character becomes its 4-digit standard telegraph code. Each code becomes three kana, and the kana are sent in romaji.
 - **Conversion formula**: identified by Satoshi Tomokiyo (Cryptiana).
 
-The documents in `docs/`, `SOURCES.md` and `data/README.md` are bilingual: Japanese first, then English (use the "English" link at the top of each file). The free-text columns of `data/corrections.csv` and `data/worksheet.csv` have English translations.
+The documents in `docs/` have English versions (`*.en.md`). `SOURCES.md` and `data/README.md` are bilingual: Japanese first, then English (use the "English" link at the top of each file). The free-text columns of `data/corrections.csv` and `data/worksheet.csv` have English translations.
 
 ## Status
 All 229 groups are tabulated in `data/groups.csv`.
@@ -24,11 +35,11 @@ All 229 groups are tabulated in `data/groups.csv`.
 
 - **Telegram 1**: from the ten members of the Military Affairs Council (軍務院, Junwuyuan) to Huang Xing.
   - Its plaintext was printed in 1916 in 『護國軍紀事』 no. 5. The print was identified by the prior repository listed below. **This is not a new decipherment; it is a check against the print.**
-  - The final table matches 102 of the 107 printed characters (see `docs/VERIFICATION.md`).
+  - The final table matches 102 of the 107 printed characters (see [docs/VERIFICATION.en.md](docs/VERIFICATION.en.md)).
 - **Telegram 2**: from six people at Zhaoqing (肇慶) to Huang Xing. They are proposed to be Lin Hu 林虎, Li Genyuan 李根源, Cheng Zikai 程子楷, Wen Qun 文羣, Yang Yongtai 楊永泰 and Zhang Shizhao 章士釗.
   - No printed text has been found. This table is an independent reading from the formula.
   - The signatories were identified using the addressees 隱印崧詔鬯行. These come from the cipher text of Huang Xing's reply (JACAR B03050731500).
-- Inferred readings, medium-certainty corrections and the prior repository's caveats are discussed in `docs/OPEN.md`.
+- Inferred readings, medium-certainty corrections and the prior repository's caveats are discussed in [docs/OPEN.en.md](docs/OPEN.en.md).
 
 ## What is new in this decipherment
 **Prior work this relies on**
@@ -39,7 +50,7 @@ All 229 groups are tabulated in `data/groups.csv`.
 1. **A complete reading of Telegram 2**
    - The prior repository left many groups of Telegram 2 blank, e.g. 0274, watuno, kutena, tathe, caose, 6381 and akuso.
    - This work proposes 僅・恐・發・卿・兵・贑・代・謀・舊部・楷・粤・出 for them, and the whole telegram reads as continuous text.
-   - Inferred and medium-certainty readings are listed, with their grounds, in `data/corrections.csv` and `docs/OPEN.md`.
+   - Inferred and medium-certainty readings are listed, with their grounds, in `data/corrections.csv` and [docs/OPEN.en.md](docs/OPEN.en.md).
 2. **Identification of the six signatories**
    - Decoding the cipher text of Huang Xing's reply (B03050731500) with the formula gives the addressees 隱印崧詔鬯行. This does not depend on any handwritten copy, and it matches the printed text in 『近代史資料』 no. 50.
    - The Japanese handwritten translation 隱印崧蕘邕行 appears to be a copying error. It is quoted in D. Bourdeau's repository dbourdeau/cyphersolver, targets/sunyatsen/HUANG_NOTES.md.
@@ -50,17 +61,17 @@ All 229 groups are tabulated in `data/groups.csv`.
    - Li Liejun's (李烈鈞) Xiehe army (協和軍) will be assembled within ten days and enter Jiangxi via Shaozhou (韶州). Li Liejun's troops did in fact fight at Shaozhou on 19 June.
    - Lin Hu will become commander of the 4th Division, gather about 10,000 of his former troops and march into Jiangxi (the telegram reads 虎任第四師長，收集舊部約萬，亦卽出贑).
      - 師 and 舊部 are read after correcting the spelling; their certainty is medium.
-     - The title "4th Division commander" does not match later records. In the staff lists of 『軍務院考實』, Lin Hu is commander-in-chief of the 6th National Protection Army, and the 4th Division commander in Li Liejun's army is Fang Shengtao 方聲濤 (see `docs/OPEN.md`).
+     - The title "4th Division commander" does not match later records. In the staff lists of 『軍務院考實』, Lin Hu is commander-in-chief of the 6th National Protection Army, and the 4th Division commander in Li Liejun's army is Fang Shengtao 方聲濤 (see [docs/OPEN.en.md](docs/OPEN.en.md)).
    - Zhang Shizhao will travel to Japan to report in person.
-   - Who "潤輔" near the beginning refers to is not settled. The staff lists name a resident delegate in Japan, Zhang Xiaozhun 張孝準 (courtesy name 潤農), who fits the context, but the kana do not match (see `docs/OPEN.md`).
+   - Who "潤輔" near the beginning refers to is not settled. The staff lists name a resident delegate in Japan, Zhang Xiaozhun 張孝準 (courtesy name 潤農), who fits the context, but the kana do not match (see [docs/OPEN.en.md](docs/OPEN.en.md)).
 4. **A second copy of the cipher text**
    - JACAR B03050731100 contains a copy of the same telegram, sent to the Foreign Ministry on 21 May 1916 by Consul Ōta (太田) at Zhaoqing. Its cover note summarizes both telegrams.
    - This confirms, from contemporary Japanese records, the date (20 May) and that Li Genyuan was among the senders of Telegram 2.
-   - Comparing the two copies, the corrected spelling of 5 words (at 短・適・唐・光・情・羣) appears as such in the second copy (see `docs/VERIFICATION.md`).
+   - Comparing the two copies, the corrected spelling of 5 words (at 短・適・唐・光・情・羣) appears as such in the second copy (see [docs/VERIFICATION.en.md](docs/VERIFICATION.en.md)).
 5. **Minor points**
    - The formula can represent telegraph codes only up to 9199. Its handling of multiples of 200 cannot be checked against actual telegrams.
    - The pencil note on worksheet frame 0080 reads 詔, not 韶.
-   - The transcription was cross-checked against three blind transcriptions by another AI (see `docs/VERIFICATION.md`).
+   - The transcription was cross-checked against three blind transcriptions by another AI (see [docs/VERIFICATION.en.md](docs/VERIFICATION.en.md)).
 
 ## Contents
 | Path | Contents |
@@ -71,9 +82,11 @@ All 229 groups are tabulated in `data/groups.csv`.
 | `data/groups.csv` | Table of all 229 groups (kana, telegraph code, character, category), generated by `src/build_groups.py` |
 | `data/worksheet.csv` | Japanese analysts' worksheet notes compared with this reading (26 items) |
 | `data/ctc_kTaiwanTelegraph.tsv` | Telegraph code → character table, extracted from Unicode Unihan |
-| `src/` | Converter and tools (`kana.py`, `build_groups.py`, `check.py`, `fix.py`, `beam.py`, `lm.py`, `build_ctc.py`) |
+| `src/` | Converter and tools (`kana.py`, `second.py`, `build_groups.py`, `check.py`, `fix.py`, `beam.py`, `lm.py`, `build_ctc.py`) |
 | `tests/` | Tests of the formula, the reply, and table consistency |
-| `docs/` | Decipherment record (DECIPHERMENT), verification (VERIFICATION), open questions (OPEN). Japanese and English |
+| `docs/` | Method, figures, use of AI and limits (METHOD), decipherment record (DECIPHERMENT), verification (VERIFICATION), open questions (OPEN). English versions are `*.en.md` |
+| `second/` | Second transcription: three blind transcriptions by Codex (`codex_run*.txt`; `*_raw.txt` is the unedited output, `*_events.jsonl` the run log) and the prompt. Agreement is computed by `src/second.py` |
+| `CITATION.cff` | Citation information (version, date) |
 | `data/README.md` | Meaning of the files, columns and categories in `data/`. Japanese and English |
 
 ## Usage
@@ -112,12 +125,12 @@ See [SOURCES.md](SOURCES.md#english) for full references.
   - three blind transcriptions by another AI (OpenAI Codex), and
   - the prior repository's transcription.
 
-  Disagreements were rechecked against the images, and 5 words were corrected (see `docs/VERIFICATION.md`).
+  Disagreements were rechecked against the images, and 5 words were corrected (see [docs/VERIFICATION.en.md](docs/VERIFICATION.en.md)).
 - Parts of the work were run automatically until a goal was reached, using Claude Code's /goal feature.
 - **Models used**
   - Claude: Claude Opus 5.5 (`claude-opus-5-5`). The three helper agents used during the work ran on the same model.
   - Transcription cross-check: OpenAI Codex (`codex-cli 0.163.0-alpha.10.2`, model `gpt-6.1-sol`).
-- AI readings and judgments can be wrong. The grounds and certainty of each correction are given in `data/corrections.csv` and `docs/OPEN.md`. Please check against the original JACAR images.
+- AI readings and judgments can be wrong. The grounds and certainty of each correction are given in `data/corrections.csv` and [docs/OPEN.en.md](docs/OPEN.en.md). Please check against the original JACAR images.
 
 ## License
 - Code (`src/`, `tests/`): MIT

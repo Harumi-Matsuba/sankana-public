@@ -1,0 +1,14 @@
+cff-version: 1.2.0
+message: "If you use this work, please cite it as below."
+title: "Decipherment of the 1916 three-kana telegrams (JACAR B03050089100)"
+authors:
+  - name: "Harumi-Matsuba"
+version: "0.1"
+date-released: "2026-10-20"
+repository-code: "https://github.com/Harumi-Matsuba/sankana-public"
+license: ["MIT", "CC-BY-4.0"]
+keywords:
+  - cryptography
+  - telegram
+  - Huang Xing
+  - 1916
