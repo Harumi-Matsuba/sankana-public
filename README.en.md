@@ -45,12 +45,14 @@ All 229 groups are tabulated in `data/groups.csv`.
    - The Japanese handwritten translation 隱印崧蕘邕行 appears to be a copying error. It is quoted in D. Bourdeau's repository dbourdeau/cyphersolver, targets/sunyatsen/HUANG_NOTES.md.
    - Matching these characters with courtesy names (字) and art names (号) gives the six signatories above. All six courtesy or art names (隱青, 印泉, 崧生, 詔雲, 暢卿, 行嚴) are also confirmed in the 1916 staff lists of 『軍務院考實』. There, Yang Yongtai's courtesy name is written 暢卿, a homophone (chàng) of the addressee 鬯.
    - The editorial footnote in 『近代史資料』 gives the 4th and 5th addressees as Zeng Qiheng 曾其衡 and Zhao Zhengping 趙正平. However, Zhao Zhengping's courtesy name is 厚生 (also so in the 1916 staff lists), which does not match 鬯. The kana for 衡 do not match the signature either.
-3. **Content of Telegram 2**: the situation on the Zhaoqing side as of 20 May 1916.
+3. **What Telegram 2 says**: the senders' account and plans as of 20 May 1916. These are statements in the telegram, not verified facts.
    - The Military Affairs Council exists only in name; its committees and delegates' meetings have not yet been organized.
    - Li Liejun's (李烈鈞) Xiehe army (協和軍) will be assembled within ten days and enter Jiangxi via Shaozhou (韶州). Li Liejun's troops did in fact fight at Shaozhou on 19 June.
-   - Lin Hu will gather about 10,000 of his former troops and march into Jiangxi.
+   - Lin Hu will become commander of the 4th Division, gather about 10,000 of his former troops and march into Jiangxi (the telegram reads 虎任第四師長，收集舊部約萬，亦卽出贑).
+     - 師 and 舊部 are read after correcting the spelling; their certainty is medium.
+     - The title "4th Division commander" does not match later records. In the staff lists of 『軍務院考實』, Lin Hu is commander-in-chief of the 6th National Protection Army, and the 4th Division commander in Li Liejun's army is Fang Shengtao 方聲濤 (see `docs/OPEN.md`).
    - Zhang Shizhao will travel to Japan to report in person.
-   - According to the staff lists in 『軍務院考實』, Li Liejun's army had a "4th Division" (commander: Fang Shengtao 方聲濤), and the Military Affairs Council had a resident delegate in Japan, Zhang Xiaozhun 張孝準 (courtesy name 潤農). These are clues to "虎任第四師長" and "潤輔" in the telegram, but neither is settled (see `docs/OPEN.md`).
+   - Who "潤輔" near the beginning refers to is not settled. The staff lists name a resident delegate in Japan, Zhang Xiaozhun 張孝準 (courtesy name 潤農), who fits the context, but the kana do not match (see `docs/OPEN.md`).
 4. **Minor points**
    - The formula can represent telegraph codes only up to 9199. Its handling of multiples of 200 cannot be checked against actual telegrams.
    - The pencil note on worksheet frame 0080 reads 詔, not 韶.
